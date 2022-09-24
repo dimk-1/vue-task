@@ -1,6 +1,6 @@
 import { api } from "@/api/axios";
 
-const getUsers = async (amount = 3) => {
+const getUsers = async (amount = 100) => {
   try {
     const response = await api.get("/users", {
       params: { per_page: amount },
